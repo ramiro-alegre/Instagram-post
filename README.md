@@ -1,5 +1,5 @@
 # Instagram-post
- Example of instagram post with a little interaction
+ Example of instagram post with a little interaction ("Mas..." - "More...")
 
 Watch in: https://codepen.io/Rama22/pen/RwVqpNN
 
