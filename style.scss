@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$border-post: #DBDBDB;
+$main-color: #FAFAFA;
+$color-button-active:#0F9BF7;
+$color-button: #B3DFFC;
+$corazon-color: #ED4956;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $main-color;
+    main {
+        height: 100%;
+        width: 100%;
+        .Instagram-post {
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto auto auto;
+            height: 800px;
+            width: 600px;
+            border: 1px solid $border-post;
+            .Header-post {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid $border-post;
+                .Header-post-left {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    .image-perfil {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        padding: 1.8px;
+                        margin: 10px 0px;
+                        border: 3px solid #DA3A87;
+                    }
+                    .image-perfil:hover {
+                        cursor: pointer;
+                    }
+                }
+                .Header-post-right {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding-right: 10px;
+                    h2 {
+                        font-size: 15px;
+                        margin-left: 10px;
+                    }
+                    h2:hover {
+                        cursor: pointer;
+                    }
+                    .puntitos {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .puntitos:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .Img-post {
+                height: 60%;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .acciones-post {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .acciones-post-ul {
+                    display: flex;
+                    flex-direction: row;
+                    .acciones-post-li-left {
+                        font-size: 25px;
+                        margin: 8px 15px;
+                    }
+                    .acciones-post-li-left:hover {
+                        cursor: pointer;
+                    }
+                }
+                .acciones-post-li-right {
+                    li {
+                        font-size: 25px;
+                        margin: 8px 15px;
+                    }
+                    li:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .me-gustas-totales {
+                display: flex;
+                flex-direction: row;
+                margin-left: 13px;
+                p {
+                    padding: 2px 2px;
+                }
+                .Persona,
+                .Numero {
+                    font-weight: bold;
+                }
+                .Persona:hover,
+                .Numero:hover {
+                    cursor: pointer;
+                }
+            }
+            .descripcion {
+                display: flex;
+                flex-direction: row;
+                width: 95%;
+                font-size: 15px;
+                margin-left: 13px;
+                .descripcion-texto {
+                    margin-top: 10px;
+                    .usuario {
+                        font-size: 15px;
+                        font-weight: bold;
+                        padding-right: 5px;
+                    }
+                    .usuario:hover {
+                        cursor: pointer;
+                    }
+                    .ver-mas {
+                        display: inline;
+                        margin-left: 3px;
+                        color: gray;
+                    }
+                    .ver-mas:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .comentarios {
+                margin-bottom: 20px;
+                margin-left: 13px;
+                .comentarios-total-conteiner {
+                    .comentarios-total {
+                        margin-top: 5px;
+                        color: grey;
+                        font-size: 15px;
+                    }
+                    .comentarios-total:hover {
+                        cursor: pointer;
+                    }
+                }
+                .comentarios-personas {
+                    font-size: 15px;
+                    .comentario {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 5px 0px;
+                        .usuario {
+                            font-weight: bold;
+                        }
+                        .usuario:hover {
+                            cursor: pointer;
+                        }
+                        p {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .footer-instagram-post {
+                width: 100%;
+                height: 100%;
+                border-top: 1px solid $border-post;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .smile {
+                    font-size: 25px;
+                    margin: 0px 13px;
+                }
+                .smile:hover {
+                    cursor: pointer;
+                }
+                .form {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    .comentario-footer {
+                        width: 100%;
+                        height: 20px;
+                        background: none;
+                        border: none;
+                        font-size: 15px;
+                        resize: none;
+                        outline: none;
+                    }
+                    .comentario-click {
+                        border: none;
+                    }
+                    .boton {
+                        color: $color-button;
+                        background: none;
+                        border: none;
+                        margin: 0px 13px;
+                    }
+                    .boton:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        main {
+            .Instagram-post {
+                width: 400px;
+            }
+        }
+    }
+}
